@@ -1,0 +1,26 @@
+#1164 - Cameroon
+
+culture = sawabantu
+religion = shamanism #Fetishism
+capital = "Cameroon"
+trade_goods = dyes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+
+
+discovered_by = KON
+discovered_by = NDO
+discovered_by = LOA
+discovered_by = sub_saharan
+
+1444.1.1 = {
+	owner = CMO
+	controller = CMO
+	add_core = CMO
+}
+1472.1.1 = { discovered_by = POR } # Fren�o do P�
+1804.1.1 = { discovered_by = SOK }

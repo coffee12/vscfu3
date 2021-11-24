@@ -1,0 +1,20 @@
+#4075 - Lango
+
+culture = acholi
+religion = shamanism #Fetishism
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = east_african
+discovered_by = central_african
+capital = "Lango"
+
+1444.1.1 = {
+	owner = BSG
+	controller = BSG
+	add_core = BSG
+}

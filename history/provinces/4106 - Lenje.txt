@@ -1,0 +1,17 @@
+culture = bemba
+religion = shamanism #Fetishism
+trade_goods = salt
+capital = "Lenje"
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+discovered_by = east_african
+discovered_by = central_african
+is_city = yes
+
+1444.1.1 = {
+	owner = LGW
+	controller = LGW
+	add_core = LGW
+}

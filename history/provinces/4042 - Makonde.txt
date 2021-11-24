@@ -1,0 +1,21 @@
+#4042 - Makonde
+
+culture = makua
+religion = shamanism #Fetishism
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+capital = "Makonde"
+discovered_by = east_african
+discovered_by = central_african
+
+1710.1.1 = { discovered_by = OMA }
+
+1444.1.1 = {
+	owner = TBK
+	controller = TBK
+	add_core = TBK
+}

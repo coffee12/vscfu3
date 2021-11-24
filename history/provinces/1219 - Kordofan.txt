@@ -1,0 +1,29 @@
+#1219 - Darfur
+
+culture = nubian 
+religion = shamanism #Fetishism
+capital = "Al-Fashir"
+add_core = DAR
+trade_goods = slaves
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+extra_cost = 8
+center_of_trade = 1
+is_city = yes
+
+1444.1.1 = {
+	owner = DAR
+	controller = DAR
+	add_core = DAR
+}
+1596.1.1 = {
+	owner = DAR
+	controller = DAR
+	discovered_by = NUB
+	is_city = yes
+	discovered_by = ETH
+	trade_goods = slaves
+}
+1682.1.1 = { religion = sunni }

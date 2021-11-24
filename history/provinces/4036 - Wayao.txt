@@ -1,0 +1,28 @@
+#4036 - Wayao
+
+culture = makua
+religion = shamanism #Fetishism
+trade_goods = ivory
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+capital = "Wayao"
+
+discovered_by = east_african
+discovered_by = central_african
+
+1444.1.1 = {
+	owner = MRA
+	controller = MRA
+	add_core = MRA
+}
+1710.1.1 = { discovered_by = OMA }
+1730.1.1 = {
+	owner = MKU
+	controller = MKU
+	add_core = MKU
+	trade_goods = ivory
+}

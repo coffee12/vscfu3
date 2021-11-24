@@ -1,0 +1,21 @@
+#1273 - Taveta
+
+culture = bantu #thagiicu
+religion = shamanism #Fetishism
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african
+discovered_by = east_african
+
+1444.1.1 = {
+	owner = TNZ
+	controller = TNZ
+	add_core = TNZ
+}
+
+1593.1.1 = { discovered_by = POR }
+1710.1.1 = { discovered_by = OMA }
