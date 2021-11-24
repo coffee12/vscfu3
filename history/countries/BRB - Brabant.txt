@@ -28,8 +28,8 @@ capital = 92
 		death_date = 1415.10.25
 		claim = 70
 		adm = 3
-		dip = 2
-		mil = 2
+		dip = 3
+		mil = 3
 	}
 }
 
