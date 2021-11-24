@@ -5,27 +5,26 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_india_flag }
 			NOT = { tag = ENG }
 			NOT = { tag = FRA }
+			NOT = { tag = HAB }
 			}
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 90			# Murcia
-			owns_core_province = 1865			# Granada
-			owns_core_province = 4769			# Andalucia
-			owns_core_province = 93			# Cordoba
-			owns_core_province = 94			# Gibraltar
-			owns_core_province = 1743			# Jaen
-			owns_core_province = 1866			# Cadiz
-			owns_core_province = 91			# Almeria
+			owns_core_province = 90	
+			owns_core_province = 1865
+			owns_core_province = 4769
+			owns_core_province = 93	
+			owns_core_province = 94	
+			owns_core_province = 1743
+			owns_core_province = 1866	
+			owns_core_province = 91	
 		}
 		effect = {
 			change_tag = BEL
 			add_prestige = 30
-			set_country_flag = formed_india_flag
 			
 			low_countries_region = {
 				limit = {
@@ -42,11 +41,11 @@ country_decisions = {
 			factor = 1
 		}
 		provinces_to_highlight = {
-				province_id = 90	# Cordoba
-				province_id = 1865	# Gibraltar
-				province_id = 4769	# Jaen
-				province_id = 93	# Cadiz
-				province_id = 94	# Almeria
+				province_id = 90
+				province_id = 1865
+				province_id = 4769
+				province_id = 93
+				province_id = 94
 				province_id = 1743
 				province_id = 1866
 				province_id = 91

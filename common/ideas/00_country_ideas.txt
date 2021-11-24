@@ -15893,7 +15893,7 @@ samoan_ideas = { #Credit to James Beaumont
 		global_ship_trade_power = 0.2
 	}
 }
-BEL_Ideas = {
+BEL_Ideas = { # Clubbing mod belgium
 	start = {
 		land_morale = 0.1
 		diplomatic_upkeep = 1
@@ -15904,7 +15904,7 @@ BEL_Ideas = {
 	}
 	
 	trigger = {
-		tag = BUR
+		tag = BEL
 	}
 	free = yes
 	
