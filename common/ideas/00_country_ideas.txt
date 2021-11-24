@@ -13023,11 +13023,11 @@ FLA_ideas = {
 BRB_ideas = {
 	start = {
 		global_tax_modifier = 0.10
-		stability_cost_modifier = -0.1
+		land_morale = 0.10
 	}
 	
 	bonus = {
-		land_morale = 0.10
+		development_cost = -0.05
 	}
 	
 	trigger = {
@@ -13036,7 +13036,7 @@ BRB_ideas = {
 	free = yes
 	
 	brb_charter_of_liberty = {
-		global_unrest = -1
+		global_trade_goods_size_modifier = 0.10
 	}
 	brb_marsh_warfare = {
 		leader_land_manuever = 1
