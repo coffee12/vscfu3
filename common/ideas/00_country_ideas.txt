@@ -941,7 +941,7 @@ VEN_ideas = {
 	}
 	
 	trigger = {
-		tag = VEN
+
 	}
 	free = yes		#will be added at load.
 	
@@ -2976,7 +2976,7 @@ DAL_ideas = {
 	}
 	
 	trigger = {
-		tag = DAL
+		tag = VEN
 
 	}
 	free = yes		#will be added at load.
