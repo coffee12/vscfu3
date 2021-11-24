@@ -1,0 +1,368 @@
+namespace = spot
+
+# spot mehmed failsafe. credit to foffy123
+country_event = {
+	id = spot.1
+	title = spot.1.t
+	desc = spot.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		NOT = { has_ruler = "Mehmed II Fatih" }
+		NOT = { is_year = 1475 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = spot_tur_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = spot_tur_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = spot_tur_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = spot.1.a
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			adm = 5
+			dip = 5
+			mil = 5
+			fixed = yes
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			age = 25
+			claim = 20
+		}
+		event_target:spot_tur_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:spot_tur_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = spot.1.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:spot_tur_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+# spot local noble failsafe. credit to foffy123
+country_event = {
+	id = spot.2
+	title = spot.2.t
+	desc = spot.2.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		NOT = { adm = 6 dip = 6 mil = 6 }
+		NOT = { is_year = 1470 }
+		has_country_flag = spot_localnoble
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = spot_pol_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = spot_pol_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = spot_pol_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = spot.2.a
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			adm = 5
+			dip = 5
+			mil = 5
+			fixed = yes
+			culture = ROOT
+			religion = ROOT
+			age = 25
+			claim = 20
+		}
+		event_target:spot_pol_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:spot_pol_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = spot.2.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:spot_pol_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+# spot 100 years war railroad
+country_event = {
+	id = spot.3
+    title = spot.3.t
+	desc = spot.3.d
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+	}
+
+	option = {
+		name = spot.3.a
+		add_treasury = 500
+		add_manpower = 5
+	}
+}
+
+# hre not join empire thank foffy123
+country_event = {
+	id = spot.4
+	title = spot.4.t
+	desc = spot.4.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		tag = HAB
+	}
+	
+	option = {
+		name = spot.4.a
+		add_opinion = {
+			who = PRO
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = AVI
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = TEU
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = ALB
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = VEN
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = RAG
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = EPI
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = EFR
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = BOS
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = HRZ
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = SER
+			modifier = i_fucking_hate_austria
+		}	
+		add_opinion = {
+			who = DAN
+			modifier = i_fucking_hate_austria
+		}	
+		add_opinion = {
+			who = LOR
+			modifier = i_fucking_hate_austria
+		}	
+		add_opinion = {
+			who = UTR
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = GEL
+			modifier = i_fucking_hate_austria
+		}
+		add_opinion = {
+			who = LIE
+			modifier = i_fucking_hate_austria
+		}	
+		reverse_add_opinion = {
+			who = PRO
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = AVI
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = TEU
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = ALB
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = VEN
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = EPI
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = EFR
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = BOS
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = HRZ
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = SER
+			modifier = i_fucking_hate_austria
+		}	
+		reverse_add_opinion = {
+			who = DAN
+			modifier = i_fucking_hate_austria
+		}	
+		reverse_add_opinion = {
+			who = LOR
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = FRI
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = UTR
+			modifier = i_fucking_hate_austria
+		}
+		reverse_add_opinion = {
+			who = GEL
+			modifier = i_fucking_hate_austria
+		}		
+		reverse_add_opinion = {
+			who = LIE
+			modifier = i_fucking_hate_austria
+		}				
+		reverse_add_opinion = {
+			who = RAG
+			modifier = i_fucking_hate_austria
+		}				
+	}
+}
