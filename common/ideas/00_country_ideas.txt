@@ -2075,7 +2075,7 @@ ITA_ideas = {
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		discipline = 0.05
 	}
 	
 	trigger = {
