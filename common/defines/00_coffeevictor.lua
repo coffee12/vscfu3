@@ -44,6 +44,7 @@ NDefines.NCountry.PS_NAVAL_BARRAGE = 25
 NDefines.NCountry.PS_GARRISON_SORTIES = 0
 NDefines.NCountry.CORE_LOSE_PRESTIGE = 0
 NDefines.NCountry.ABANDON_CORE_PRESTIGE = 0
+NDefines.NCountry.PS_SCORCH_EARTH = 0
 
 --NMilitary
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
