@@ -32,6 +32,7 @@ on_startup = {
 		muslim_school_events.20 #Pick School
 #		flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
+
 	if = {
 		limit = {
 			has_dlc = "Cradle of Civilization"
@@ -76,6 +77,78 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
+}
+
+	#### Dev click counter ###
+	#ARUMBA LINES
+
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_adm_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_adm_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_dip_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_dip_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_mil_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_mil_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_sum_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_sum_clicks
+				value = 0
+			}
+		}
+    }
 }
 
 # country
@@ -1587,14 +1660,53 @@ on_dismantle_revolution = {
 
 # province
 on_adm_development = {
+	#ARUMBA LINES
+    hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_adm_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 # province
 on_dip_development = {
+	#ARUMBA LINES
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_dip_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 # province
 on_mil_development = {
+	#ARUMBA LINES
+    hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_mil_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
+	}
 }
 
 on_overextension_pulse = {
