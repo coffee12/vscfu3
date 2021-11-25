@@ -1089,7 +1089,7 @@ POR_ideas = {
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
-		land_morale = 0.1
+		artillery_power = 0.1
 	}
 }
 
