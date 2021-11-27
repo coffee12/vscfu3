@@ -1,0 +1,27 @@
+name = "English Conquest Of Caen"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 168 # Caen
+}
+
+1443.1.1 = {
+	add_attacker = ENG
+	add_attacker = CAS
+	add_attacker = BUR
+	add_attacker = BRI
+	add_attacker = NAV
+	add_defender = NRM
+	add_defender = GUY
+}
+
+#Peace and end of war
+1444.1.1 = {
+	rem_attacker = ENG
+	rem_attacker = CAS
+	rem_attacker = BUR
+	rem_attacker = BRI
+	rem_attacker = NAV
+	rem_defender = NRM
+	rem_defender = GUY
+}

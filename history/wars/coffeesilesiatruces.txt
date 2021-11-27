@@ -1,0 +1,21 @@
+name = "Austrian Conquest Of Breslau"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 264 # Breslau
+}
+
+1443.1.1 = {
+	add_attacker = HAB
+	add_attacker = BRA
+	add_defender = GLG
+	add_defender = OPL
+}
+
+#Peace and end of war
+1444.1.1 = {
+	rem_attacker = HAB
+	rem_attacker = BRA
+	rem_defender = GLG
+	rem_defender = OPL
+}
